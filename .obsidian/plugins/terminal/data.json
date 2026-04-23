@@ -118,6 +118,31 @@
       "type": "integrated",
       "useWin32Conhost": true
     },
+    "win32GitBash": {
+      "args": [
+        "--login",
+        "-i"
+      ],
+      "executable": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "followTheme": true,
+      "name": "Git Bash",
+      "platforms": {
+        "win32": true
+      },
+      "pythonExecutable": "python3",
+      "restoreHistory": false,
+      "rightClickAction": "copyPaste",
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "integrated",
+      "useWin32Conhost": true
+    },
     "win32ExternalDefault": {
       "args": [],
       "executable": "C:\\Windows\\System32\\cmd.exe",
@@ -161,7 +186,7 @@
       "useWin32Conhost": true
     }
   },
-  "defaultProfile": null,
+  "defaultProfile": "win32IntegratedDefault",
   "terminalOptions": {
     "documentOverride": null
   }

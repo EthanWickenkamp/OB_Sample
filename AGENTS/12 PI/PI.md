@@ -87,6 +87,6 @@ Commands over stdin (JSONL): `prompt`, `steer`, `follow_up`, `abort`, `set_model
 
 ## Related
 
-- [[AGENTS]] — the file Pi actually reads
+- [[AGENTS/AGENTS]] — the file Pi actually reads
 - [[PI Setup Research]] — full research with source verification
 - [[OBPI]] — project note in the parent vault's OpenSource AI folder

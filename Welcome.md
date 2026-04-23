@@ -79,6 +79,13 @@ ln -s "10 CLAUDE" .claude
 
 Full walkthrough and troubleshooting in [[Symlink Setup]].
 
+### 6. Obsidian Terminal Plugin
+
+Embeds a terminal inside Obsidian so you can run `claude` in a pane next to your notes instead of a separate terminal app. Enable from **Settings → Community plugins**, then open a terminal via the ribbon or command palette (**Terminal: Open terminal**).
+
+The vault ships with a Git Bash profile (`win32GitBash`) pre-configured in `.obsidian/plugins/terminal/data.json`, pointing at the default Windows Git install path (`C:\Program Files\Git\bin\bash.exe`). Pick it from the profile dropdown, or make it the default by setting `defaultProfile` to `win32GitBash` in that same file. The other built-in profiles (`win32IntegratedDefault`, etc.) fall back to `cmd.exe`.
+
+Note: rendering is good but not perfect — some glyphs and prompt decorations can display slightly off. If that bothers you, Windows Terminal (below) is the more polished fallback.
 
 ### 6. (Windows) Configure Windows Terminal
 

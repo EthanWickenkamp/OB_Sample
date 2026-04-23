@@ -2,7 +2,7 @@
 
 NotebookLM is a scoped research assistant for heavy source digestion. Use it to chew through large PDFs, papers, and transcripts that would be expensive to run through Claude directly — then pull the distilled output back into the vault.
 
-See [[SETUP_GUIDE]] for the full rationale and feature breakdown.
+See [[_05 Adv/07 Workspaces/REMOTION/SETUP_GUIDE]] for the full rationale and feature breakdown.
 
 ## Workflow
 

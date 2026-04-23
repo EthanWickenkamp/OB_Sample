@@ -42,7 +42,7 @@ Referencing a path as a 2-digit number means one of these folders:
 - `03 Wiki/` — distilled, stable reference layer. See [[WIKI]]
 - `04 Notes/` — ideas, drafts, working project notes; default note location
 - `05 Menus/` — Maps of Content and navigation notes. See [[MENUS]]
-- `07 Workspaces/` — self-contained project directories, each with its own `CLAUDE.md`. See [[07 Workspaces/Workspaces]]
+- `07 Workspaces/` — self-contained project directories, each with its own `CLAUDE.md`. See [[Workspaces]]
 - `08 Code/` — tooling and technical reference, grouped by language/runtime. See [[08 Code/Code]]
 - `10 CLAUDE/` — this directory. Claude Code project config (commands, skills, agents)
 - `11 GEMINI/` — Gemini CLI project config and reference

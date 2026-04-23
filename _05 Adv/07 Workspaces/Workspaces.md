@@ -23,9 +23,9 @@ Claude reads the workspace `CLAUDE.md` on entry. Subfolder `CONTEXT.md` files ar
 
 | Workspace                                                       | Purpose                                                                    |
 | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [[NanoBanana/CLAUDE\|NanoBanana]]                               | AI image generation via Gemini + banana skill                              |
-| [[NotebookLM/CLAUDE\|NotebookLM]]                               | Source-heavy research via Google NotebookLM, distilled back into the vault |
-| [[REMOTION/CLAUDE\|REMOTION]]                                   | Data-driven video production with Remotion (React + TS)                    |
+| [[_05 Adv/07 Workspaces/NanoBanana/CLAUDE\|NanoBanana]]                               | AI image generation via Gemini + banana skill                              |
+| [[_05 Adv/07 Workspaces/NotebookLM/CLAUDE\|NotebookLM]]                               | Source-heavy research via Google NotebookLM, distilled back into the vault |
+| [[_05 Adv/07 Workspaces/REMOTION/CLAUDE\|REMOTION]]                                   | Data-driven video production with Remotion (React + TS)                    |
 | [[Content Directory Structure\|MWP]]                                | Reference material and workflow starter docs (not a live workspace)        |
 
 ## Creating a new workspace

@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiMenuSquare",
+      "📓",
       "LiAlignCenterHorizontal",
       "✅",
-      "🌩",
-      "LiPi",
-      "♊"
+      "🌩"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,13 +39,15 @@
   "01 Raw Sources": "📰",
   "02 Calendar": "📅",
   "10 CLAUDE": "🦧",
-  "07 Workspaces": "⚒",
   "08 Code": "LiCodesandbox",
-  "11 GEMINI": "♊",
-  "12 PI": "LiPi",
-  "13 Codex": "🌩",
   "TODO.md": "✅",
   "_05 Adv/05 Crystal": "💎",
   "_05 Adv/04 Ideas": "🌱",
-  "_05 Adv/03 Wiki": "⚓"
+  "_05 Adv/03 Wiki": "⚓",
+  "AGENTS/13 Codex": "🌩",
+  "AGENTS/12 PI": "LiPi",
+  "AGENTS/11 GEMINI": "♊",
+  "_05 Adv/07 Workspaces": "⚒",
+  "04 Notes": "📓",
+  "05 Menus": "LiMenuSquare"
 }
