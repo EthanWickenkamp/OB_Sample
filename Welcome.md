@@ -65,7 +65,7 @@ powershell: `irm https://claude.ai/install.ps1 | iex`
 
 Claude Code looks for project commands, agents, and settings in `.claude/` at the working directory. This vault keeps them in `10 CLAUDE/` so they show up in Obsidian's file tree. Link the two so edits in one are visible to both. To do this delete any existing `.claude` folder in the vault and make a system level link, this will duplicate `10 CLAUDE` to `.claude`.
 
-**Windows (Git Bash, run as administrator):**
+**Windows (cmd, run as administrator):**
 ```bash
 cd /c/path/to/OB_Sample
 mklink /D ".claude" "10 CLAUDE"
