@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(obsidian*)",
+      "Bash(cd*)",
+      "Bash(ls*)"
+    ]
+  }
+}

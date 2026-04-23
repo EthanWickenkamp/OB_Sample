@@ -1,0 +1,39 @@
+{
+  "palette": {
+    "seed": 6,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "ai": 1,
+    "langchain": 2,
+    "IT": 3,
+    "UIUC": 4,
+    "excalidraw": 5,
+    "Linux": 6,
+    "MediaServer": 7,
+    "svelte": 8,
+    "docs": 9,
+    "docs/langchain": 1,
+    "code": 10,
+    "code/python": 1,
+    "code/R": 2,
+    "Homelab": 11,
+    "ProjectMisc": 12,
+    "template": 13,
+    "config": 14,
+    "stats": 15,
+    "CEE": 16,
+    "CHEM": 17,
+    "UIUC/CHEM": 1,
+    "UIUC/CEE": 2,
+    "UIUC/STATS": 3,
+    "calendar": 18
+  },
+  "_version": 3
+}

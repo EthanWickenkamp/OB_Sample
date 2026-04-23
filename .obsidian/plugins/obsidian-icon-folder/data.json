@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiAlignCenterHorizontal",
+      "✅",
+      "🌩",
+      "LiPi",
+      "♊"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "HOME.md": "🏠",
+  "00 Attachments": "🔗",
+  "01 Raw Sources": "📰",
+  "02 Calendar": "📅",
+  "10 CLAUDE": "🦧",
+  "07 Workspaces": "⚒",
+  "08 Code": "LiCodesandbox",
+  "11 GEMINI": "♊",
+  "12 PI": "LiPi",
+  "13 Codex": "🌩",
+  "TODO.md": "✅",
+  "_05 Adv/05 Crystal": "💎",
+  "_05 Adv/04 Ideas": "🌱",
+  "_05 Adv/03 Wiki": "⚓"
+}
