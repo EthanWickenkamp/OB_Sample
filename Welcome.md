@@ -81,11 +81,22 @@ Full walkthrough and troubleshooting in [[Symlink Setup]].
 
 ### 6. Obsidian Terminal Plugin
 
-Embeds a terminal inside Obsidian so you can run `claude` in a pane next to your notes instead of a separate terminal app. Enable from **Settings → Community plugins**, then open a terminal via the ribbon or command palette (**Terminal: Open terminal**).
+**How it works, in basic terms.** The plugin adds a pane inside Obsidian that runs a real shell as a child process, so you can type commands next to your notes instead of Alt-Tabbing to a separate terminal. The flow is:
 
-The vault ships with a Git Bash profile (`win32GitBash`) pre-configured in `.obsidian/plugins/terminal/data.json`, pointing at the default Windows Git install path (`C:\Program Files\Git\bin\bash.exe`). Pick it from the profile dropdown, or make it the default by setting `defaultProfile` to `win32GitBash` in that same file. The other built-in profiles (`win32IntegratedDefault`, etc.) fall back to `cmd.exe`.
+`Obsidian` → `Terminal plugin` → `shell (Git Bash / cmd / zsh)` → `claude` CLI
 
-Note: rendering is good but not perfect — some glyphs and prompt decorations can display slightly off. If that bothers you, Windows Terminal (below) is the more polished fallback.
+A **profile** is just a pointer to a shell executable plus its arguments. You pick one from the dropdown when opening a terminal. The vault ships with a Git Bash profile (`win32GitBash`) pre-configured in `.obsidian/plugins/terminal/data.json`, pointing at the default Windows Git install path (`C:\Program Files\Git\bin\bash.exe`). Make it the default by setting `defaultProfile` to `win32GitBash` in that same file. The other built-in profiles (`win32IntegratedDefault`, etc.) fall back to `cmd.exe`.
+
+Enable from **Settings → Community plugins**, then open a terminal via the ribbon icon or command palette (**Terminal: Open terminal**). Inside that terminal, type `claude` to start Claude Code.
+
+> [!warning] Rendering and spawn caveats
+> The embedded terminal is a JavaScript emulator (xterm.js) running inside Obsidian's Electron window — not a full native terminal. Expect rough edges:
+> - **Glyphs and prompt decorations** (powerline icons, nerd-font symbols, emoji) can display slightly off or as boxes.
+> - **Resize is laggy.** You may see `error spawning terminal resizer` — Claude Code tries to launch a helper to track pane size and the plugin's sandbox sometimes blocks it. Harmless, but the UI may not reflow cleanly when you drag the pane.
+> - **`spawn python3 ENOENT`.** On Windows, Python installs as `python.exe` or `py.exe`, not `python3`. Anything (a skill, a hook) that shells out to `python3` will fail here. Fix options: (a) install via [[uv]] and call `uv run python ...`, (b) alias `python3` to `py -3` in your Git Bash rc, or (c) add a `python3.exe` shim on PATH.
+> - **PATH is inherited from Obsidian**, not your full login shell — tools you only installed into a specific shell's rc may not resolve. Launch Obsidian from a shell where your PATH is already correct, or hard-code absolute paths in profiles.
+>
+> For anything long-running or visually important (TUIs, `claude` sessions with rich output), prefer the native Windows Terminal or Ghostty profiles below.
 
 ### 6. (Windows) Configure Windows Terminal
 
