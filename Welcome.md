@@ -138,9 +138,9 @@ You will notice there is a `_05 Adv/` folder tucked at the bottom of the tree. T
 
 This vault attempts to scaffold out a ladder for these different levels of context refinement and information type. However, obsidian in general is not meant to be a one size fits all or be a structure you set on day one. Ultimately the vault should be a growing system and modified to the users needs. There is space at `06` and `09` for Classes, Certificates, Work, Career, Health, any other major knowledge sources worth a dedicated root numbered folder.
 
-**Basic (start here).** One folder for your thinking (`04 Notes/`), one for navigation (`05 Menus/`). Subfolder inside `04 Notes/` by topic (`04 Notes/Programming/`, `04 Notes/Work/`, etc.). MOCs and indexes live in `05 Menus/`. This is enough until you have more notes and 
+**Basic (start here).** One folder for your thinking (`04 Notes/`), one for navigation (`05 Menus/`). Subfolder inside `04 Notes/` by topic (`04 Notes/Programming/`, `04 Notes/Work/`, etc.). MOCs and indexes live in `05 Menus/`. This is enough until you have more notes.
 
-**Advanced (migrate later).** The `04`-tier splits into three layers: `03 Wiki/` for distilled, stable source reference notes you return to; `04 Ideas/` for working drafts and project notes; `05 Crystal/` for synthesized Maps of Content and focus hubs. Peek inside `_05 Adv/` to see the shape.
+**Advanced (migrate later).** The `04`-tier splits into three layers: `03 Wiki/` for distilled, stable source reference notes you return to; `04 Ideas/` for working drafts and project notes; `05 Crystal/` for synthesized Maps of Content and focus hubs. Peek inside `_05 Adv/` to see the shape. Realizing this resembles [[Zettelkasten]] and that should be adopted more.
 
 **When to migrate.** When enough sources are being referenced and synthesized review Karpathy Wiki LLM research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thinking and LLM collaboration into or you can leave it as `04 Notes/.
 
