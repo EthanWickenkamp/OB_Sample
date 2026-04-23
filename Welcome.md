@@ -50,18 +50,18 @@ Download from [obsidian.md](https://obsidian.md), then open this folder as a vau
 
 On **Windows**, install [[Git Bash]] from [git-scm.com](https://git-scm.com). On **Mac/Linux**, your built-in Terminal already works. Commands in the rest of this vault can assume a Unix-style shell.
 
-### 5. Install Node.js via nvm
+### 3. Install Node.js via nvm
 
 Claude Code runs on Node. [[nvm]] keeps Node installs clean and lets you upgrade, reinstall, change versions, without breaking things.
 
 
-### 3. Install Claude Code
+### 4. Install Claude Code
 
 One `npm install -g` command, then run `claude` inside this folder and sign in with your Anthropic account. See [Quickstart - Claude Code Docs](https://code.claude.com/docs/en/quickstart) for the full install and first-run walkthrough.
 Bash: `curl -fsSL https://claude.ai/install.sh | bash`
 powershell: `irm https://claude.ai/install.ps1 | iex`
 
-### 4. Symlink `10 CLAUDE/` ↔ `.claude/`
+### 5. Symlink `10 CLAUDE/` ↔ `.claude/`
 
 Claude Code looks for project commands, agents, and settings in `.claude/` at the working directory. This vault keeps them in `10 CLAUDE/` so they show up in Obsidian's file tree. Link the two so edits in one are visible to both. To do this delete any existing `.claude` folder in the vault and make a system level link, this will duplicate `10 CLAUDE` to `.claude`.
 
@@ -80,21 +80,21 @@ ln -s "10 CLAUDE" .claude
 Full walkthrough and troubleshooting in [[Symlink Setup]].
 
 
-### 5. (Windows) Configure Windows Terminal
+### 6. (Windows) Configure Windows Terminal
 
 Install the Microsoft **Windows Terminal** app from the Microsoft Store or likely already installed. 
 Navigate to the vault `cd`, `ls`, `dir`, and you can launch [[ClaudeCode]] with `claude`
 #### Custom Profile
 We can make a custom Git Bash, Obsidian Vault, and Claude Code profile. Set the name, set the command line to `C:/Program Files/Git/bin/bash.exe -i -l -c "claude; exec bash"` this uses git bash and runs `claude` command. Then set starting directory to the vault ex: `%USERPROFILE%/OB/Vault1`. Finally at `/config/icons` in this vault there are a few icons of clawd or make an icon with [[NanoBanana]]. You can also turn this into a desktop shortcut by creating a new shortcut and using the target `wt.exe -p "Profile Name"` Full walkthrough and json profile example to ctrl-v the profile at [[Windows Terminal]].
 
-### 5. (Mac/Linux) Install Ghostty
+### 6. (Mac/Linux) Install Ghostty
 [Ghostty](https://ghostty.org/)
 [[Ghostty]] is a fast, modern terminal emulator with cleaner rendering and better defaults than the built-in options. It is a drop-in replacement for macOS Terminal. Optional, but very useful if you ever plan to run multiple agent tabs or want to customize your terminal. Recommended by ClaudeCode creator, no windows version.
 
-### 6. (Optional) Version your vault with git
+### 7. (Optional) Version your vault with git
 Turn this folder into a git repository so every change is stored, and so you can sync the vault across devices. See [[Git Setup]] for three options (local-only, self-hosted server, or private GitHub repository).
 
-### 7. Install Python via uv
+### 8. Install Python via uv
 [Installation | uv](https://docs.astral.sh/uv/getting-started/installation/)
 Instead of letting Claude run commands that mutate your local Python packages, keep a managed, documented venv it can use across all sessions. See [[uv]].
 `curl -LsSf https://astral.sh/uv/install.sh | sh`
@@ -124,9 +124,9 @@ This vault attempts to scaffold out a ladder for these different levels of conte
 
 **Advanced (migrate later).** The `04`-tier splits into three layers: `03 Wiki/` for distilled, stable source reference notes you return to; `04 Ideas/` for working drafts and project notes; `05 Crystal/` for synthesized Maps of Content and focus hubs. Peek inside `_05 Adv/` to see the shape.
 
-**When to migrate.** When a enough sources are being referenced and synthesized review Karpathy Wiki LLM research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note to linking relevant current Idea notes `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thinking and LLM collaboration into or you can leave it as `04 Notes/.
+**When to migrate.** When enough sources are being referenced and synthesized review Karpathy Wiki LLM research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thinking and LLM collaboration into or you can leave it as `04 Notes/.
 
-The commands (`/note`, `/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`.
+The commands (`/note`, `/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`. `/moc` is for basic table of contents, `/crystal` for a curated organized reference.
 
 ### Folder reference
 
@@ -211,8 +211,8 @@ You do not need to memorize these, but these are the most practical ones to star
 | ----------------- | --------------------------------------------------------------------- |
 | `/daily`          | Today's daily note hub — view, add to-dos, add events                 |
 | `/current`        | Loads the note currently open in Obsidian                             |
-| `/note Title`     | Creates a new note from a template                                    |
-| `/moc folder`     | Builds a Map of Content (navigation note) for a folder                |
+| `/note Title`     | Creates a new note from an inferred template                          |
+| `/moc folder`     | Builds a Map of Content (navigation note) for a folder or tag         |
 | `/pickup`         | Summarizes recent vault activity                                      |
 | `/focus MOC name` | Loads a topic and linked notes for deep work, save session on unfocus |
 | `/sync`           | Pulls and rebases the latest vault changes from your git remote       |
@@ -220,7 +220,6 @@ You do not need to memorize these, but these are the most practical ones to star
 Plain English works just as well. The clearer your request, the better the result — a well-phrased ask is a kind of skill in itself. Try things like:
 
 - "Make a note about my onboarding ideas."
-- "Summarize the articles in Clippings about Claude Code and Obsidian."
 - "Create a Map of Content for `04` / `Obsidian`."
 - "Find unfinished tasks related to setup."
 
