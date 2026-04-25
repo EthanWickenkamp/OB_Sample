@@ -177,17 +177,19 @@ There is already useful material in this vault.
 
 ### In `_05 Adv/04 Ideas/Obsidian/`
 
-- [[Obsidian Commands 1]]
+- [[Chat Artifacts vs GPT Projects]]
+- [[Obsidian Command-Driven Context Management]]
 - [[Obsidian Skills Starter Pack]]
 - [[Vault Organization and Menu System]]
-- [[How I'm Using Claude Code + Obsidian As a Non-Technical Person 1]]
+### And In `Clippings/`
+articles pulled from web about Obsidian + Claude
 
 These live in the advanced-layout sample and explain 
 - the starter command-driven workflow and 
 - how to build your own, note patterns, and 
 - how other people are actually using a setup like this. 
 
-An idea file may be of varying level of quality — don't necessarily read them end to end; use an LLM to query the information you want and break it down iteratively. Write your own note from them.
+An idea file may be of varying level of quality — don't necessarily read them end to end; use an LLM to query the information you want and break it down iteratively. Get what you need out of the concept and write or prompt your own note from them.
 
 ## Your First 10 Minutes
 
@@ -234,6 +236,7 @@ You do not need to memorize these, but these are the most practical ones to star
 | `/pickup`         | Summarizes recent vault activity                                      |
 | `/focus MOC name` | Loads a topic and linked notes for deep work, save session on unfocus |
 | `/sync`           | Pulls and rebases the latest vault changes from your git remote       |
+Focus is great for session reflection and auto context loading but needs to be fixed for tag structure, also modify to your needs.
 
 Plain English works just as well. The clearer your request, the better the result — a well-phrased ask is a kind of skill in itself. Try things like:
 
