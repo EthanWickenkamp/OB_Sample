@@ -42,7 +42,7 @@ Rather than hoping the AI "gets" what's important:
 - Control exactly what gets loaded into context
 
 ### 3. No Context Loss
-ChatGPT's context compaction can quietly drop details considered important. Here, every artifact persists exactly as created. If I need it, I load it explicitly.
+ChatGPT's context compaction can quietly drop details considered important. Those repeated judgeHere, every artifact persists exactly as created. If I need it, I load it explicitly.
 
 ### 4. Session Isolation + Continuity
 Each session starts fresh but draws from the curated artifact base. I choose which notes to include in context—rather than having the AI guess.
