@@ -18,6 +18,19 @@ Scaffolded the `12 PI/` directory with stub agents (chat, vault-tools, youtube-s
 - `12 PI/agents/youtube-summary/agents.md` — structured YouTube summaries
 - Vault boundary pattern from the video (agents can only write to their own directory by default)
 
+## Github
+
+[nicobailon (Nico Bailon) · GitHub](https://github.com/nicobailon)
+
+## Youtube
+
+[Pi Coding Agent Setup After 2 Months - YouTube](https://youtu.be/DWWrLlM3gwQ?si=jXwiVRBGAn2sDsfc)
+
+
+
+
+
+
 ## Research needed
 
 ### 1. AGENTS.md loading behavior

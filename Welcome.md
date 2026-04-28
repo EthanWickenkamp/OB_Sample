@@ -4,7 +4,7 @@ This vault is a local, plain-text knowledge system built on two things working t
 
 - **Obsidian** — the editor/viewer. Browse, link, and visually work with your notes.
 - **Claude Code** — the engine. It searches the vault, creates structure, runs skills, and handles the repetitive maintenance parts so you can focus on thinking. 
-*Claude Code is the best out of the box harness but a custom PI harness is likely ideal.*
+*Claude Code is the best out of the box harness but a custom [[PI]] harness is likely ideal.*
 
 ## What is Obsidian
 
