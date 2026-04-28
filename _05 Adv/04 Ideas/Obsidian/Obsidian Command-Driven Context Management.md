@@ -8,42 +8,42 @@ A command is a quick, deterministic **hook** — a little prompt plug-in you dro
 
 ## Core Commands
 
-The everyday, low-effort ones. Run them whenever you need the vault to hand you a specific thing.
+The everyday, low-effort ones. Run them whenever you need the vault to hand you a specific thing. Remember there are many commands that come with ClaudeCode as well.
 
-| Command | What it does |
-| --- | --- |
-| `/current` | Load the note currently open in Obsidian into context. |
-| `/daily` | Daily note hub — view today, add a to-do, add an event, show upcoming. Subcommands: `/daily todo …`, `/daily event …`, `/daily upcoming`. |
-| `/note <title>` | Load, create, or open a note by name or path. `/note create <title> [template=…]` to create. |
-| `/search-context <query>` | Full-text search plus tags, links, backlinks, outlines, orphans, and unresolved links — the main exploration command. |
-| `/pickup` | Summarize recent vault activity so you can figure out where you left off. |
-| `/move <src> <dst>` | Move or rename a note, preserving all wikilinks. |
-| `/sync` | Pull, rebase, and push vault changes against the git remote. Handles a dirty working tree. |
-| `/youtube-transcript <url>` | Fetch a YouTube transcript and save it into `01 Raw Sources/`. |
+| Command                     | What it does                                                                                                                                                     |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/current`                  | Load the note currently open in Obsidian into context.                                                                                                           |
+| `/daily`                    | Daily note hub — view today, add a to-do, add an event, show upcoming. Subcommands: `/daily todo …`, `/daily event …`, `/daily upcoming`.                        |
+| `/note <title>`             | Load, create, or open a note by name or path. `/note create <title> [template=…]` to create.                                                                     |
+| `/search-context <query>`   | Full-text search plus tags, links, backlinks, outlines, orphans, and unresolved links — the main exploration command. **Integrate with QMD for improved search** |
+| `/pickup`                   | Summarize recent vault activity so you can figure out where you left off.                                                                                        |
+| `/move <src> <dst>`         | Move or rename a note, preserving all wikilinks.                                                                                                                 |
+| `/sync`                     | Pull, rebase, and push vault changes against the git remote. Handles a dirty working tree.                                                                       |
+| `/youtube-transcript <url>` | Fetch a YouTube transcript and save it into `01 Raw Sources/`. **Can be improved** not sure where script came from                                               |
 
 ## Workflow Commands
 
 Bigger, concept-level commands. These shape the vault itself — building hubs, processing captures, running longer sessions. Each one does several steps and usually writes or rewrites notes.
 
-| Command | What it does |
-| --- | --- |
-| `/moc <folder>` | Generate a Map of Content for a folder — an automatic, complete index grouped by subfolder. Stored in `05 Crystal/`. Use this for structure. |
-| `/crystal <tag or note>` | Promote a tag or note to a Crystal — a curated, editorial hub with prose and hand-picked links. Use this when *you* bring the structure. |
-| `/focus <MOC>` | Start a deep-work session on a MOC: load all linked notes, pin a session log to today's daily note. |
-| `/unfocus` | Close the current focus session — review what changed, update the session log, ask a few confirming questions about decisions made. |
-| `/inbox` | Process and organize whatever landed in `Inbox/`. Spawns a dedicated agent. |
-| `/tagger` | Analyze the vault's tags and propose consolidations, renames, or deletions before applying approved changes. |
+| Command                  | What it does                                                                                                                                 |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/moc <folder>`          | Generate a Map of Content for a folder — an automatic, complete index grouped by subfolder. Stored in `05 Crystal/`. Use this for structure. |
+| `/crystal <tag or note>` | Promote a tag or note to a Crystal — a curated, editorial hub with prose and hand-picked links. Use this when *you* bring the structure.     |
+| `/focus <MOC>`           | Start a deep-work session on a MOC: load all linked notes, pin a session log to today's daily note.                                          |
+| `/unfocus`               | Close the current focus session — review what changed, update the session log, ask a few confirming questions about decisions made.          |
+| `/inbox`                 | Process and organize whatever landed in `Inbox/`. Spawns a dedicated agent.                                                                  |
+
 
 ## Experimental Commands
 
-These work, but the shape of the prompt is still being tuned. Run them, see what you get, tell Claude what you wanted instead, and rewrite the command file. That loop is how a command graduates into the core set. More of these at [[Obsidian Commands 1]] by [InternetVin](https://internetvin.com/Obsidian+Commands)
+These work, but the shape of the prompt is still being tuned. Run them, see what you get, tell Claude what you wanted instead, and rewrite the command file. That loop is how a command graduates into the core set. More of these at [[Obsidian Commands 1]] by [InternetVin](https://internetvin.com/Obsidian+Commands).
 
 | Command                                      | What it does                                                                                                                                             |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/synthesize <notes or folder> [> question]` | Read a set of notes and write the densest paragraph(s) that capture the thesis, then reflect on structure.                                               |
 | `/prune <folder>`                            | Analyze a folder for stale, duplicate, or overlapping notes and walk through merges/removals with approval.                                              |
 | `/to-sample <path>`                          | Generalize one of your reference notes or commands into a template-worthy version for `OB_Sample` — strips personal state, rewrites paths, softens tone. |
-|                                              |                                                                                                                                                          |
+| `/tagger`                                    | Analyze the vault's tags and propose consolidations, renames, or deletions before applying approved changes. **FIX** for your tagging schema             |
 
 ## Context Loading Pattern
 

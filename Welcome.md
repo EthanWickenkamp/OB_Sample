@@ -142,7 +142,7 @@ This vault attempts to scaffold out a ladder for these different levels of conte
 
 **Advanced (migrate later).** The `04`-tier splits into three layers: `03 Wiki/` for distilled, stable source reference notes you return to; `04 Ideas/` for working drafts and project notes; `05 Crystal/` for synthesized Maps of Content and focus hubs. Peek inside `_05 Adv/` to see the shape. Realizing this resembles [[Zettelkasten]] and that should be adopted more.
 
-**When to migrate.** When enough sources are being referenced and synthesized review Karpathy Wiki LLM research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thoughts, writing, and LLM collaboration or you can leave it as `04 Notes/.
+**When to migrate.** When enough sources are being referenced and synthesized review [[Karpathy LLM Wiki]] research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thoughts, writing, and LLM collaboration or you can leave it as `04 Notes/.
 
 The commands (`/note`, `/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`. `/moc` is for basic table of contents, `/crystal` for a curated organized reference.
 

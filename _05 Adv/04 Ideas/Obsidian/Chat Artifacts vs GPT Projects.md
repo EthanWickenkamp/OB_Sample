@@ -45,7 +45,7 @@ Rather than hoping the AI "gets" what's important:
 ChatGPT's context compaction can quietly drop details considered important. Those repeated judgement calls are exactly where AI is weak. Here, every artifact persists exactly as created. When referencing them explicitly prompt the harness to load it.
 
 ### 4. Session Isolation + Continuity
-Each session starts fresh but draws from the curated artifact base. I choose which notes to include in context—rather than having the AI guess.
+Each session starts fresh but draws from the curated artifact base. Choose which notes to include in context—rather than having the AI guess.
 
 ## The Reprompt Pattern
 
@@ -74,7 +74,7 @@ This cycle produces better results than hoping a single prompt gets everything r
 
 ## Conclusion
 
-Manual context control requires more effort, but the tradeoff is worth it: better artifacts, no lost information, and a knowledge base that grows exactly the way I intend.
+Manual context control requires more effort, but the tradeoff is worth it: better artifacts, no lost information, and a knowledge base that grows exactly the way you intend. Repeated compaction and AI chat output reingestion does not compound in the same way.
 
 ---
 
