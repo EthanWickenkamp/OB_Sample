@@ -6,6 +6,9 @@
 
 Many Architectures
 
+Set of core components
+OpenClaw uses [[Pi Integration Architecture]]
+
 ### Language model
 
 ### bash UNIX shell
@@ -26,18 +29,25 @@ Cron job
 ## The 7 MD files
 
 ### AGENTS.md
-
+[[_05 Adv/04 Ideas/AI/OpenClaw MD/AGENTS|AGENTS]]
+[[AGENTS.md Template]]
 
 ### BOOT.md
 
 ### BOOTSTRAP.md (one-time)
+[[BOOTSTRAP.md Template]]
 
 ### HEARTBEAT.md
+[[HEARTBEAT.md Template]]
 
 ### IDENTITY.md
+[[IDENTITY Template]]
 
 ### SOUL.md
+[[SOUL.md Template]]
 
 ### TOOLS.md
+[[TOOLS.md Template]]
 
 ### USER.md
+[[USER Template]]

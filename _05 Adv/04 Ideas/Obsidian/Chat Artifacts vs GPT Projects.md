@@ -18,9 +18,9 @@ Traditional AI chat interfaces (like ChatGPT) rely on automatic context manageme
 - One-way conversation flow—each prompt builds on everything before
 
 ### Gemini personal intelligence
-makes you wait 3 seconds to load a random thing about you and pollute what your working on
-the thing can be outdated, or barely relevant, and you wait to get a context pollution
-manual workspace with claude is the frontier currently
+You wait 3 seconds to load a random thing about you and pollute what you're working on
+The thing can be outdated, or barely relevant, and you wait to get a context pollution
+Manual workspace with Claude is the frontier currently
 
 ### Manual Context Control (This Vault)
 - Explicit artifact creation for every substantial idea
@@ -32,7 +32,7 @@ manual workspace with claude is the frontier currently
 ## Workflow Advantages
 
 ### 1. Iterative Refinement
-Each note gets reprompted multiple times. I edit, expand, clarify, and restructure—exactly like working with a draft. This produces higher-quality output than one-shot generation.
+Each note gets reprompted multiple times. Edit, expand, clarify, and restructure—exactly like working with a draft. This produces higher-quality output than one-shot generation.
 
 ### 2. Explicit Context Building
 Rather than hoping the AI "gets" what's important, I:
