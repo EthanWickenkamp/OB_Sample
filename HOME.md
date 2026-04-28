@@ -42,8 +42,7 @@ color default
 
 ```dataview
 LIST
-FROM "05 M"
-WHERE startswith(file.name, "MOC")
+FROM "05 Menus"
 SORT file.name ASC
 ```
 
