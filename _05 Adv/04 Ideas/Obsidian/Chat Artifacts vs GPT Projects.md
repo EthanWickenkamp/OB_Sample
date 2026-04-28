@@ -35,7 +35,7 @@ Manual workspace with Claude is the frontier currently
 Each note gets reprompted multiple times. Manually edit, expand, clarify, and restructure—exactly like working with a draft. This produces higher-quality output than one-shot generation.
 
 ### 2. Explicit Context Building
-Rather than hoping the AI "gets" what's important, I:
+Rather than hoping the AI "gets" what's important:
 - Create dedicated notes for each concept
 - Link related notes together
 - Update and expand over time
