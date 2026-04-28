@@ -42,7 +42,7 @@ color default
 
 ```dataview
 LIST
-FROM "05 Crystal"
+FROM "05 M"
 WHERE startswith(file.name, "MOC")
 SORT file.name ASC
 ```
