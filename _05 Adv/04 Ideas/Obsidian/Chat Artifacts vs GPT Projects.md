@@ -80,4 +80,4 @@ Manual context control requires more effort, but the tradeoff is worth it: bette
 
 See also:
 - [[Obsidian Command-Driven Context Management]] — Using commands to load notes
-- [[Vault Organization and Menu System]] — Folder structure and MOC menus
+- [[Vault Organization and Menu System Old]] — Folder structure and MOC menus

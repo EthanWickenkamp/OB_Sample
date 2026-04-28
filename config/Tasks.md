@@ -3,10 +3,10 @@
 
 ## What
 
-A two-stage system that keeps TODO items across the vault accurate, personalized, and current. Runs as a scheduled morning job on SilverFish before the day starts.
+A two-stage system that keeps TODO items across the vault accurate, personalized, and current. 
 
 **Stage 1 — Python iCal fetcher** (cron, stateless)
-Pulls D2L calendar feeds for all active courses, parses events/assignments, writes structured output for Claude to consume.
+Pulls calendar feeds for all active courses, parses events/assignments, writes structured output for Claude to consume.
 
 **Stage 2 — Claude agent** (triggered after Stage 1)
 Reads the iCal output alongside course notes, week notes, project notes, and recent vault activity. Produces:
@@ -31,14 +31,14 @@ Tasks are standard `- [ ]` checkboxes with emoji metadata appended. The plugin a
 
 ### Query Location
 
-[[Spring 2026]] has a live Tasks query dashboard that pulls incomplete tasks from the four main course notes only (not sub-pages like Project 1). Queries are grouped by: Overdue, Due This Week, Coming Up (30 days), No Due Date.
+[[TODO]] has a live Tasks query dashboard. Queries are grouped by: Overdue, Due This Week, Coming Up (30 days), No Due Date.
 
 ## Data Sources
 
-### iCal Feeds (D2L)
+### iCal Feeds 
 
 Private token feeds — no auth needed beyond the URL. One per course:
-`https://d2l.depaul.edu/d2l/le/calendar/feed/user/feed.ics?feedOU=#&token=#`
+`https://example.com/ex/calendar/feed/user/feed.ics?feedOU=#&token=#`
 
 ### Vault Activity
 
@@ -46,7 +46,7 @@ Claude reads recent git history, week notes, and project notes to understand wha
 
 ### Future Sources
 
-Other data sources can be added as the system matures (GitHub issues, homelab alerts, etc.)
+Other data sources can be added as the system matures (GitHub issues, alerts, etc.)
 
 ## Morning Briefing
 
@@ -55,12 +55,12 @@ Written into today's daily note as a `## Morning Briefing` section. Contains:
 - **What's due** — upcoming deadlines with context from course notes
 - **Where you left off** — based on recent vault edits and git history
 - **Course schedule** — what topics are covered in today's classes
-- **Study tidbits** — relevant concept refreshers tied to upcoming material (e.g., "CSE 333 moves to Fourier Series this week — builds on LTI convolution from last week")
+- **Study tidbits** — relevant concept refreshers tied to upcoming material
 
 ## Architecture
 
 ```
-SilverFish (cron, ~6am daily)
+Server (cron, ~6am daily)
   │
   ├─ Stage 1: Python script
   │    ├─ Fetch 4 iCal feeds
@@ -79,13 +79,4 @@ SilverFish (cron, ~6am daily)
 
 All clients (Windows PC, laptop, phone) pull the result via normal git sync.
 
-## Implementation Status
 
-- [x] Obsidian Tasks plugin installed and configured
-- [x] Tasks emoji format in use across course notes
-- [x] Live Tasks query dashboard in [[Spring 2026]]
-- [x] iCal feed links in all four course notes
-- [ ] Python iCal fetcher script
-- [ ] Claude morning agent prompt
-- [ ] SilverFish cron job setup
-- [ ] Morning Briefing template/format in daily notes

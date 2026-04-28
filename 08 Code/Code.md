@@ -21,7 +21,7 @@ Tooling and technical reference notes, grouped by language or runtime. Each note
 
 - **AI** — [[qmd]]
 - **Bash** — [[Git Bash]]
-- **Git** — [[Git Setup]], [[Private Repo]]
+- **Git** — [[Git Setup]], [[Collaboration Repo]]
 - **JavaScript** — [[Bun]], [[nvm]], [[Remotion]]
 - **Python** — [[uv]]
 

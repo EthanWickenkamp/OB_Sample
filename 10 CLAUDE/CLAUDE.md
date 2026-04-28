@@ -33,7 +33,7 @@ Use `outline` to scan a note you are *not* opening. For the currently active not
 If unsure about a command's syntax or options, run `obsidian help <command>`.
 
 ## Vault Structure
-
+**FIX for current layout**
 Referencing a path as a 2-digit number means one of these folders:
 
 - `00 Attachments/` — pasted images and files, topic-organized, plugin.

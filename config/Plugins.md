@@ -1,6 +1,6 @@
 # Plugins
 
-Symmetric plugin state across both vaults: 18 canonical enabled + 11 evaluation disabled = **29 total community plugins**, identical in OB_Claude and OB_Sample.
+Plugin state across both vaults: 18 canonical enabled + 11 evaluation disabled = **29 total community plugins**, OB_Sample. Not sure this is 100% accurate. Suggested list anyway edit however.
 
 ---
 

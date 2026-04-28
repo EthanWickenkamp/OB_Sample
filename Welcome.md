@@ -4,7 +4,7 @@ This vault is a local, plain-text knowledge system built on two things working t
 
 - **Obsidian** — the editor/viewer. Browse, link, and visually work with your notes.
 - **Claude Code** — the engine. It searches the vault, creates structure, runs skills, and handles the repetitive maintenance parts so you can focus on thinking. 
-*Claude Code is the best out of the box harness but a custom PI harness is likely ideal.*
+*Claude Code is the best out of the box harness but a custom [[PI]] harness is likely ideal.*
 
 ## What is Obsidian
 
@@ -142,7 +142,7 @@ This vault attempts to scaffold out a ladder for these different levels of conte
 
 **Advanced (migrate later).** The `04`-tier splits into three layers: `03 Wiki/` for distilled, stable source reference notes you return to; `04 Ideas/` for working drafts and project notes; `05 Crystal/` for synthesized Maps of Content and focus hubs. Peek inside `_05 Adv/` to see the shape. Realizing this resembles [[Zettelkasten]] and that should be adopted more.
 
-**When to migrate.** When enough sources are being referenced and synthesized review Karpathy Wiki LLM research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thinking and LLM collaboration into or you can leave it as `04 Notes/.
+**When to migrate.** When enough sources are being referenced and synthesized review Karpathy Wiki LLM research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thoughts, writing, and LLM collaboration or you can leave it as `04 Notes/.
 
 The commands (`/note`, `/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`. `/moc` is for basic table of contents, `/crystal` for a curated organized reference.
 
@@ -177,17 +177,19 @@ There is already useful material in this vault.
 
 ### In `_05 Adv/04 Ideas/Obsidian/`
 
-- [[Obsidian Commands 1]]
+- [[Chat Artifacts vs GPT Projects]]
+- [[Obsidian Command-Driven Context Management]]
 - [[Obsidian Skills Starter Pack]]
-- [[Vault Organization and Menu System]]
-- [[How I'm Using Claude Code + Obsidian As a Non-Technical Person 1]]
+- [[Vault Organization and Menu System Old]]
+### And In `Clippings/`
+articles pulled from web about Obsidian + Claude
 
 These live in the advanced-layout sample and explain 
 - the starter command-driven workflow and 
 - how to build your own, note patterns, and 
 - how other people are actually using a setup like this. 
 
-An idea file may be of varying level of quality — don't necessarily read them end to end; use an LLM to query the information you want and break it down iteratively. Write your own note from them.
+An idea file may be of varying level of quality — don't necessarily read them end to end; use an LLM to query the information you want and break it down iteratively. Get what you need out of the concept and write or prompt your own note from them.
 
 ## Your First 10 Minutes
 
@@ -234,6 +236,7 @@ You do not need to memorize these, but these are the most practical ones to star
 | `/pickup`         | Summarizes recent vault activity                                      |
 | `/focus MOC name` | Loads a topic and linked notes for deep work, save session on unfocus |
 | `/sync`           | Pulls and rebases the latest vault changes from your git remote       |
+Focus is great for session reflection and auto context loading but needs to be fixed for tag structure, also modify to your needs.
 
 Plain English works just as well. The clearer your request, the better the result — a well-phrased ask is a kind of skill in itself. Try things like:
 

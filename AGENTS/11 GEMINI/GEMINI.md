@@ -45,21 +45,7 @@ If unsure about a command's syntax or options, run `obsidian help <command>`.
 
 Referencing a path as a 2-digit number means one of these folders:
 
-- `00 Attachments/` — pasted images and files, topic-organized
-- `01 Raw Sources/` — unprocessed input: web pages, PDFs, YouTube transcripts, clippings
-- `02 Calendar/` — daily notes named `YYYY-MM-DD.md`
-- `03 Wiki/` — distilled, stable reference layer
-- `04 Notes/` — ideas, drafts, working project notes; default note location
-- `05 Menus/` — Maps of Content and navigation notes
-- `07 Workspaces/` — self-contained project directories, each with its own `CLAUDE.md`
-  - `NanoBanana/` — image generation workspace (your primary domain)
-  - `NotebookLM/` — Google NotebookLM integration workspace
-- `08 Code/` — tooling and technical reference, grouped by language/runtime
-- `10 CLAUDE/` — Claude Code project config (commands, skills, agents)
-- `11 GEMINI/` — this agent's project config and reference
-- `12 PI/` — Pi coding agent directory
-- `Clippings/` — saved web clippings (Obsidian-managed)
-- `config/` — vault management: `Templates/`, `Scripts/`, `Icons/`
+- check and fill out
 
 Vault-level TODOs live in [[TODO]] at the root.
 

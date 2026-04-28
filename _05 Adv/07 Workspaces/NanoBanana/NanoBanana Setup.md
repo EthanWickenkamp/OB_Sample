@@ -10,7 +10,7 @@ created: 2026-04-12
 
 # NanoBanana Workspace Setup
 
-Multi-engine image generation workspace. Claude crafts the prompt using the 5-component banana skill, kicks to Gemini CLI for execution via the `/nano-banana` extension.
+Multi-engine image generation workspace. Claude crafts the prompt using the 5-component banana skill, kicks to Gemini CLI for execution via the `/nano-banana` extension. The Gemini CLI is sort of unnecessary at the moment but I assume a day will come there is an optimal fully native plugin extension for Gemini CLI.
 
 ## Pipeline
 

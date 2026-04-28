@@ -110,5 +110,5 @@ These commands feed the broader [[Chat Artifacts vs GPT Projects]] system:
 ---
 
 See also:
-- [[Vault Organization and Menu System]] — folder structure and menus
+- [[Vault Organization and Menu System Old]] — folder structure and menus
 - [[Obsidian Skills Starter Pack]] — the skills these commands lean on

@@ -2,9 +2,13 @@
 
 Pi agents can do specialized vault management tasks. Further research necessary for integration — what's here is exploratory, not settled configuration.
 
+Setup progress: [[PI Setup Research]] - starting point 
+
+Openclaw Docs: [[Pi Integration Architecture]]
+
 Reference note for the Pi coding agent setup in this vault. Pi reads `AGENTS.md` (not this file) as its system prompt — this is a human-facing reference.
 
-## How Pi Works in This Vault
+## How Pi Works in This Vault?
 
 Pi reads `AGENTS.md` at the vault root as global context, then walks up from cwd collecting any additional `AGENTS.md` files. Agent-specific folders in `12 PI/agents/` each have their own `AGENTS.md` that adds specialized instructions.
 

@@ -91,4 +91,4 @@ Before adopting a community skill, open the `SKILL.md` and skim the body. Skills
 
 See also:
 - [[Obsidian Command-Driven Context Management]] — slash commands that build on these skills
-- [[Vault Organization and Menu System]] — where skill outputs land in the folder structure
+- [[Vault Organization and Menu System Old]] — where skill outputs land in the folder structure
