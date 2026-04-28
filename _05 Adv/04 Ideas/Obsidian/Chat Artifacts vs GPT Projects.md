@@ -32,7 +32,7 @@ Manual workspace with Claude is the frontier currently
 ## Workflow Advantages
 
 ### 1. Iterative Refinement
-Each note gets reprompted multiple times. Edit, expand, clarify, and restructure—exactly like working with a draft. This produces higher-quality output than one-shot generation.
+Each note gets reprompted multiple times. Manually edit, expand, clarify, and restructure—exactly like working with a draft. This produces higher-quality output than one-shot generation.
 
 ### 2. Explicit Context Building
 Rather than hoping the AI "gets" what's important, I:
