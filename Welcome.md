@@ -146,6 +146,13 @@ This vault attempts to scaffold out a ladder for these different levels of conte
 
 The commands (`/note`, `/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`. `/moc` is for basic table of contents, `/crystal` for a curated organized reference.
 
+#### Editing the Vault
+There is an attempt at a vault manager agent that will scan the state and vault setup.
+This can be improved for how your vault is actually changing or expanding, what plugins/commands you use
+
+Plan mode is a great tool for Claude when you want to make a large change but are not quite sure how it will shift dependencies in the rest of the vault or all the steps involved. Plan mode is a working refactor tool, vault manager agent could work as well.
+
+
 ### Folder reference
 
 Current basic layout plus the persistent top-level folders:
