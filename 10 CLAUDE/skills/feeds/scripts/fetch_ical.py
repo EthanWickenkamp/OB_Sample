@@ -7,6 +7,7 @@ Usage: python fetch_ical.py [--dry-run]
 import sys
 from pathlib import Path
 from datetime import datetime, date, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 try:
     import httpx
@@ -33,15 +34,22 @@ ICAL_FOLDER = VAULT_ROOT / "02 Calendar" / "iCal Feeds"
 LOOKAHEAD_DAYS = 90
 
 
-def load_ical_config():
+def load_config():
     if not CONFIG_FILE.exists():
         print(f"ERROR: Config file not found: {CONFIG_FILE}")
         sys.exit(1)
     post = frontmatter.load(str(CONFIG_FILE))
-    return post.get("ical", [])
+    return post.get("ical", []), post.get("timezone") or "UTC"
 
 
-def to_date(dt_val):
+def _to_local(dt_val, tz):
+    if isinstance(dt_val, datetime) and dt_val.tzinfo is not None:
+        return dt_val.astimezone(tz)
+    return dt_val
+
+
+def to_date(dt_val, tz):
+    dt_val = _to_local(dt_val, tz)
     if isinstance(dt_val, datetime):
         return dt_val.date()
     if isinstance(dt_val, date):
@@ -49,14 +57,15 @@ def to_date(dt_val):
     return None
 
 
-def fmt_time(dt_val):
+def fmt_time(dt_val, tz):
     """Return '1:30 PM' string or None for all-day events."""
+    dt_val = _to_local(dt_val, tz)
     if isinstance(dt_val, datetime):
         return dt_val.strftime("%I:%M %p").lstrip("0")
     return None
 
 
-def expand_recurring(component, today, cutoff):
+def expand_recurring(component, today, cutoff, tz):
     """
     Return a list of occurrence dates for a VEVENT component.
     Handles simple RRULE (DAILY/WEEKLY/MONTHLY) without exotic modifiers.
@@ -67,7 +76,7 @@ def expand_recurring(component, today, cutoff):
         return []
 
     start_val = dtstart.dt
-    start_date = to_date(start_val)
+    start_date = to_date(start_val, tz)
     if not start_date:
         return []
 
@@ -84,7 +93,7 @@ def expand_recurring(component, today, cutoff):
     until = None
     if until_list:
         u = until_list[0]
-        until = u.date() if isinstance(u, datetime) else u
+        until = to_date(u, tz)
     if until and until < today:
         return []
 
@@ -163,7 +172,8 @@ def build_feed_note(feed_name, feed_url, events_by_date):
 
 def main():
     dry_run = "--dry-run" in sys.argv
-    feeds = load_ical_config()
+    feeds, tz_name = load_config()
+    local_tz = ZoneInfo(tz_name)
 
     if not feeds:
         print("No iCal feeds configured.")
@@ -209,18 +219,18 @@ def main():
 
             start_val = dtstart.dt
             all_day = not isinstance(start_val, datetime)
-            start_time = fmt_time(start_val)
+            start_time = fmt_time(start_val, local_tz)
 
             dtend = component.get("DTEND")
             end_val = dtend.dt if dtend else None
-            end_time = fmt_time(end_val) if end_val else None
+            end_time = fmt_time(end_val, local_tz) if end_val else None
 
             summary = str(component.get("SUMMARY", "Untitled"))
             location = str(component.get("LOCATION", "")).strip() or None
             description = str(component.get("DESCRIPTION", "")).strip() or None
             uid = str(component.get("UID", ""))
 
-            occurrences = expand_recurring(component, today, cutoff)
+            occurrences = expand_recurring(component, today, cutoff, local_tz)
             for occ_date in occurrences:
                 evt = {
                     "summary": summary,

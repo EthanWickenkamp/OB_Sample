@@ -1,4 +1,5 @@
 ---
+timezone: America/Chicago
 rss:
   - name: "Nates Notebook"
     url: "https://api.substack.com/feed/podcast/1373231.rss"
@@ -10,6 +11,8 @@ ical:
 # Feed Config
 
 Feed URLs for the `/feeds` skill. Edit the frontmatter to add or remove feeds.
+
+Set `timezone:` to your IANA zone (e.g. `America/Chicago`, `America/New_York`, `Europe/London`). Events with UTC times in the source feed get converted to this zone before being written to the cached iCal notes. If omitted, falls back to UTC.
 
 ## RSS Feeds
 
