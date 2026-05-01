@@ -180,7 +180,7 @@ Basic expanded layout plus the persistent top-level folders:
 ## Good Places to Explore First
 
 Setup Claude Code and ask it to explore the vault and guide you through how it works
-`10 CLAUDE` and `config` and `08 Code`
+`10 CLAUDE` and `config` and `08 Code` are good starting points
 
 There is already useful material in this vault.
 
