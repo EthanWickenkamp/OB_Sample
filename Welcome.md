@@ -77,7 +77,6 @@ cd /path/to/OB_Sample
 ln -s "10 CLAUDE" .claude
 ```
 
-Full walkthrough and troubleshooting in [[Symlink Setup]].
 
 ### 6. Obsidian Terminal Plugin
 
@@ -101,7 +100,7 @@ Enable from **Settings → Community plugins**, then open a terminal via the rib
 ### 6. (Windows) Configure Windows Terminal
 
 Install the Microsoft **Windows Terminal** app from the Microsoft Store or likely already installed. 
-Navigate to the vault `cd`, `ls`, `dir`, and you can launch [[ClaudeCode]] with `claude`
+Navigate to the vault `cd`, `ls`, `dir`, and you can launch [[Claude Code]] with `claude`
 #### Custom Profile
 We can make a custom Git Bash, Obsidian Vault, and Claude Code profile. Set the name, set the command line to `C:/Program Files/Git/bin/bash.exe -i -l -c "claude; exec bash"` this uses git bash and runs `claude` command. Then set starting directory to the vault ex: `%USERPROFILE%/OB/Vault1`. Finally at `/config/icons` in this vault there are a few icons of clawd or make an icon with [[NanoBanana]]. You can also turn this into a desktop shortcut by creating a new shortcut and using the target `wt.exe -p "Profile Name"` Full walkthrough and json profile example to ctrl-v the profile at [[Windows Terminal]].
 
@@ -155,7 +154,7 @@ Plan mode is a great tool for Claude when you want to make a large change but ar
 
 ### Folder reference
 
-Current basic layout plus the persistent top-level folders:
+Basic expanded layout plus the persistent top-level folders:
 
 | Folder                 | Purpose                                                       |
 | ---------------------- | ------------------------------------------------------------- |
