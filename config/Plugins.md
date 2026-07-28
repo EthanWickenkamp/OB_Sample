@@ -1,6 +1,6 @@
 # Plugins
 
-Plugin state across both vaults: 18 canonical enabled + 11 evaluation disabled = **29 total community plugins**, OB_Sample. Not sure this is 100% accurate. Suggested list anyway edit however.
+Plugin state across both vaults: 17 canonical enabled + 11 evaluation disabled = **28 total community plugins**, OB_Sample. Not sure this is 100% accurate. Suggested list anyway edit however.
 
 ---
 
@@ -13,7 +13,6 @@ Plugin state across both vaults: 18 canonical enabled + 11 evaluation disabled =
 | **Dataview** | Query and display vault data with inline code blocks and tables |
 | **Tasks** | Track tasks across the vault with due dates, recurrence, and filtering |
 | **Calendar** | Calendar sidebar view of daily notes |
-| **Omnisearch** | Full-text search engine with better ranking and indexing |
 | **Buttons** | Clickable buttons in notes that run commands, open files, or trigger templates |
 | **Git** | Commit, pull, push the vault from inside Obsidian |
 
@@ -55,11 +54,9 @@ Installed so this vault can flip them on instantly, but not in the active set. S
 | **Terminal**            | Embedded shell — external terminal already covers the use case |
 | **Local REST API**      | Held for possible future external integrations, CLI pref       |
 | **Commander**           | Pending comparison vs Buttons                                  |
-| **Custom Sort**         | Pending comparison vs MAKE.md / spaces-style folder plugins    |
 | **Obsidian Annotator**  | PDF/EPUB annotation — evaluate side-by-side with PDF++         |
 | **Importer**            | One-shot Notion/Evernote/etc. migration tool                   |
 | **Colored Tags**        | Tag cluster — evaluate via `/tagger` audit                     |
 | **MetaEdit**            | Tag cluster — evaluate via `/tagger` audit                     |
 | **Tags Overview**       | Tag cluster — evaluate via `/tagger` audit                     |
 | **Tag Wrangler**        | Tag cluster — evaluate via `/tagger` audit                     |
-| **Various Complements** | Smarter autocomplete; didn't stick, but complementary          |
