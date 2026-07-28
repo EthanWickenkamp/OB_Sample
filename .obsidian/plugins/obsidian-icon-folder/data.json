@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🪶",
       "LiMenuSquare",
       "📓",
       "LiAlignCenterHorizontal",
-      "✅",
-      "🌩"
+      "✅"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -46,8 +46,8 @@
   "_05 Adv/03 Wiki": "⚓",
   "AGENTS/13 Codex": "🌩",
   "AGENTS/12 PI": "LiPi",
-  "AGENTS/11 GEMINI": "♊",
   "_05 Adv/07 Workspaces": "⚒",
   "04 Notes": "📓",
-  "05 Menus": "LiMenuSquare"
+  "05 Menus": "LiMenuSquare",
+  "AGENTS/14 Hermes": "🪶"
 }

@@ -26,11 +26,6 @@ Scaffolded the `12 PI/` directory with stub agents (chat, vault-tools, youtube-s
 
 [Pi Coding Agent Setup After 2 Months - YouTube](https://youtu.be/DWWrLlM3gwQ?si=jXwiVRBGAn2sDsfc)
 
-
-
-
-
-
 ## Research needed
 
 ### 1. AGENTS.md loading behavior
@@ -183,10 +178,4 @@ Extensions load via `jiti` (dynamic TS import) from `.pi/extensions/` or `~/.pi/
 - **Command vocabulary:** `prompt`, `steer`, `follow_up`, `abort`, `set_model`, `cycle_model`, `compact`, `get_session_stats`, `switch_session`, `fork`, `new_session`, `export_html`
 - **Claude Code skill design:** A `/pi` skill that spawns `pi --mode rpc --session-dir <path>` as a subprocess, pipes a prompt, collects the response, and returns it. Similar to how Codex and Gemini are already wired in.
 - **Not a sub-engine in the Codex sense.** Pi is a full competing harness. The RPC mode makes it callable, but it runs its own agent loop, tool execution, and compaction. Think of it as "ask lil bro to handle this" rather than "delegate a subtask to a worker."
-
-## Source material
-
-- [[YouTube - hhtExS5UQBI]] — Obsidian + Pi demo video
-- [[pi-mono]] — repo analysis in `03 Code/OpenSource AI/Repos/`
-- Pi repo: `badlogic/pi-mono` on GitHub
-- Extension examples: `packages/coding-agent/examples/extensions/`
+- **Fusion Harness** support All model providers and build as needed
