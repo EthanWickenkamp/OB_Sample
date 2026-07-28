@@ -7,7 +7,7 @@
 # Trash
 .trash/
 
-# Agent tooling (local only)
+# Agent tooling (local only — 10 CLAUDE/ is the tracked twin of .claude/)
 .claude/
 .agents/
-.pi/
+# .pi/ is tracked: it ships with the sample vault (settings, extensions, prompts)

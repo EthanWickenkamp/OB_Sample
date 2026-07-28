@@ -179,3 +179,24 @@ Extensions load via `jiti` (dynamic TS import) from `.pi/extensions/` or `~/.pi/
 - **Claude Code skill design:** A `/pi` skill that spawns `pi --mode rpc --session-dir <path>` as a subprocess, pipes a prompt, collects the response, and returns it. Similar to how Codex and Gemini are already wired in.
 - **Not a sub-engine in the Codex sense.** Pi is a full competing harness. The RPC mode makes it callable, but it runs its own agent loop, tool execution, and compaction. Think of it as "ask lil bro to handle this" rather than "delegate a subtask to a worker."
 - **Fusion Harness** support All model providers and build as needed
+
+## Re-verification — 2026-07-28, installed pi v0.81.1
+
+*Checked against the locally installed package (`npm root -g`), not the repo. All April findings re-confirmed except where noted.*
+
+**Changed since April:**
+- **Package renamed:** `@mariozechner/pi-coding-agent` → `@earendil-works/pi-coding-agent`. Extension imports must use the new scope.
+- **Context file candidates** are now case-tolerant: `["AGENTS.md", "AGENTS.MD", "CLAUDE.md", "CLAUDE.MD"]` (`dist/core/resource-loader.js:31`). Uppercase-first behavior unchanged.
+
+**Re-confirmed at v0.81.1:**
+- Tree-walk from cwd to root collecting context files; global `~/.pi/agent/` context loaded first (`resource-loader.js:55-71`).
+- Project `.pi/settings.json` merges over global `~/.pi/agent/settings.json` (`settings-manager.js:49-50`); `sessionDir` setting exists (`:436`); `--session-dir` CLI flag exists (`cli/args.js:73`).
+- Sessions at `~/.pi/agent/sessions/--<encoded-cwd>--/` with `/\:` → `-` encoding (`session-manager.js:245-246`).
+- Extensions load via jiti from `.pi/extensions/` (`extensions/loader.js`); `tool_call` hook blocks with `{ block, reason }`, `event.input` is mutable, `ctx.hasUI` / `ctx.ui.confirm|select|notify` available for dialogs.
+- Built-in tools: read, write, edit, bash, grep, find, ls (plus an `edit-diff` variant) — `dist/core/tools/`.
+- **Still no MCP support** (only grep hit is a vendored highlight.js false positive).
+- RPC mode: `--mode rpc` (modes: text | json | rpc), command vocabulary intact: `prompt`, `steer`, `abort`, `set_model`, `compact`, … (`modes/rpc/rpc-mode.js`).
+- The ~80 example extensions **ship inside the installed package** (`examples/extensions/`, 79 entries) — including `protected-paths.ts`, `permission-gate.ts`, `plan-mode/`, `git-checkpoint.ts`, `dirty-repo-guard.ts`. No repo clone needed.
+- Prompt templates: markdown files in `.pi/prompts/`, filename = command name, frontmatter `description` + `argument-hint` (`prompt-templates.js:84-100`) — same shape as Claude Code commands.
+
+**Implemented from this research (2026-07-28):** `.pi/` created at vault root (was the missing piece) — `settings.json` (Anthropic/Haiku default), `extensions/protected-paths.ts` (vault-adapted from the official example: silent writes only in `AGENTS/12 PI/` + `Inbox/`, confirm elsewhere, bash not gated), `prompts/orient.md` sample, `README.md`. Also removed `.pi/` from `.gitignore` so it ships with the sample. **Still open:** root-level `AGENTS.md` (vault-root launches read nothing today — the file sits at `AGENTS/AGENTS.md`), placeholders in it (`OB_name`, missing `config/Obsidian CLI Commands.md`), and the `/pi` Claude Code RPC skill.
