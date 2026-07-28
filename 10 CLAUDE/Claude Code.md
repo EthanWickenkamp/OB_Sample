@@ -8,7 +8,7 @@ Claude Code is Anthropic's official command-line tool for Claude. You run it ins
 - An **agent** — it can take multi-step actions (read files, edit them, run commands) rather than just answering one question at a time
 - **Shell Access** — your files stay on your machine; Claude only sees what it reads during the session
 
-In this vault, Claude Code is the thing that runs [[inbox/Obsidian Commands]] like `obsidian outline`, `/today`, `/note`, and `/menu`.
+In this vault, Claude Code is the thing that runs [[inbox/Obsidian Commands]] like `obsidian outline`, `/daily`, `/moc`, and `/pickup`.
 
 ---
 
@@ -59,7 +59,7 @@ claude --version
    - A **Claude Pro / Max subscription** (claude.ai account)
    - An **Anthropic API key** (from console.anthropic.com, pay-as-you-go)
 
-4. Once authenticated, you're in an interactive session. Type a request in plain English or use a slash command like `/today`.
+4. Once authenticated, you're in an interactive session. Type a request in plain English or use a slash command like `/daily`.
 
 To end a session, type `/exit` or press Ctrl+C twice.
 
@@ -75,8 +75,8 @@ What notes do I have about Obsidian?
 Create a note called "Weekend Trip Ideas" in 04 Notes/.
 
 # Use a slash command
-/today
-/note My New Note
+/daily
+/pickup
 ```
 
 Plain English and slash commands both work — slash commands are just shortcuts for common tasks. See [[inbox/Obsidian Commands]] for the full list.

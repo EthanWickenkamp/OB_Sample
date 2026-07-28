@@ -36,7 +36,7 @@ Every source you add, note you write, link you make, and skill you save compound
 #### Two small habits to keep in mind as you go:
 
 - **Distill, don't dump.** Raw captures are fine — `Inbox/` and `01 Raw Sources/` exist for exactly that. But the real value shows up when you rewrite, link, and shape rough material into notes that apply to your work and learning.
-- **Skills grow with you.** Most Claude commands (`/note`, `/daily`, `/moc`) are just Markdown files in the vault. When Claude does something impressive or a session is particularly productive, ask it to draft a skill or agent from it. If a skill is unreliable or lacking, run through it once or twice and tell Claude to log successful steps and rewrite it at the end with your suggestions.
+- **Skills grow with you.** Most Claude commands (`/daily`, `/moc`, `/pickup`) are just Markdown files in the vault. When Claude does something impressive or a session is particularly productive, ask it to draft a skill or agent from it. If a skill is unreliable or lacking, run through it once or twice and tell Claude to log successful steps and rewrite it at the end with your suggestions.
 
 ## Before You Start — Setup Checklist
 
@@ -143,7 +143,7 @@ This vault attempts to scaffold out a ladder for these different levels of conte
 
 **When to migrate.** When enough sources are being referenced and synthesized review [[Karpathy LLM Wiki]] research and try to develop an agent to manage these connections in `03 Wiki/`. When a cluster of notes starts to become outdated, duplicated, disorganized lift a reference and takeaways note linking relevant current Idea notes in `05 Crystal/`. `04 Ideas/` becomes your spot to dump your thoughts, writing, and LLM collaboration or you can leave it as `04 Notes/.
 
-The commands (`/note`, `/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`. `/moc` is for basic table of contents, `/crystal` for a curated organized reference.
+The commands (`/moc`, `/crystal`) are written against whichever `04` folder you are using — they do not care if the folder is named `Notes` or `Ideas`. `/moc` is for basic table of contents, `/crystal` for a curated organized reference.
 
 #### Editing the Vault
 There is an attempt at a vault manager agent that will scan the state and vault setup.
@@ -217,7 +217,7 @@ Do it in obsidian ctrl+n or
 Ask Claude Code:
 
 ```text
-/note My First Note
+Create a note called "My First Note" in 04 Notes/ from the Idea template.
 ```
 
 That creates a note in `04 Notes/` using one of the vault templates. You likely won't use this all the time but a good habit to use templates as your starting point for notes. Good for future properties tags and consistent vault structure for organization and note merges.
@@ -240,7 +240,6 @@ You do not need to memorize these, but these are the most practical ones to star
 | ----------------- | --------------------------------------------------------------------- |
 | `/daily`          | Today's daily note hub — view, add to-dos, add events                 |
 | `/current`        | Loads the note currently open in Obsidian                             |
-| `/note Title`     | Creates a new note from an inferred template                          |
 | `/moc folder`     | Builds a Map of Content (navigation note) for a folder or tag         |
 | `/pickup`         | Summarizes recent vault activity                                      |
 | `/focus MOC name` | Loads a topic and linked notes for deep work, save session on unfocus |
@@ -285,7 +284,7 @@ Modify them to your liking, adapt them over time, or delete them.
 - [ ] Open [[HOME]]
 - [ ] Read [[Obsidian Commands 1]] or [[Obsidian Skills Starter Pack]]
 - [ ] Read one article from [[Build Your Second Brain With Claude Code & Obsidian]]
-- [ ] Create a note with `/note`
+- [ ] Create a note (Ctrl+N in Obsidian, or just ask Claude)
 - [ ] Add a task to today's daily note with `/daily`
 - [ ] Run a real task — read a PDF and set up a uv claude Python venv
 
