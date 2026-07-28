@@ -45,7 +45,6 @@ Referencing a path as a 2-digit number means one of these folders:
 - `07 Workspaces/` — self-contained project directories, each with its own `CLAUDE.md`. See [[Workspaces]]
 - `08 Code/` — tooling and technical reference, grouped by language/runtime. See [[08 Code/Code]]
 - `10 CLAUDE/` — this directory. Claude Code project config (commands, skills, agents)
-- `11 GEMINI/` — Gemini CLI project config and reference
 - `12 PI/` — Pi coding agent directory (agents, prompts, extensions)
 - `Clippings/` — saved web clippings (unnumbered, Obsidian-managed)
 - `config/` — vault management: `Templates/`, `Scripts/`, `Icons/`, plugin notes

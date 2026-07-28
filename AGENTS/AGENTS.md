@@ -33,7 +33,6 @@ Full reference: `config/Obsidian CLI Commands.md`
 - `08 Code/` — code reference notes
 - `09 Classes/` — course content
 - `10 CLAUDE/` — Claude Code config
-- `11 GEMINI/` — Gemini CLI config
 - `12 PI/` — Pi agent workspace (you write here)
 - `config/Templates/` — note templates
 

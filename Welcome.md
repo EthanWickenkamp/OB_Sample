@@ -170,7 +170,6 @@ Basic expanded layout plus the persistent top-level folders:
 | `08 Code/`             | Tooling and technical reference notes                         |
 | `09 Spare/`            | Can use for tracking health, career, travel, other life stuff |
 | `10 CLAUDE/`           | Claude Code project config (commands, skills, agents)         |
-| `11 GEMINI/`           | Gemini CLI project config (ext mcp and email identity)        |
 | `12 PI/`               | Pi coding agent directory (in progress custom harness)        |
 | `13 Codex or Copilot/` | Codex/Copilot CLI harness config (available)                  |
 | `Clippings/`           | Saved web articles and imported reads                         |
